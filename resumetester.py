@@ -41,7 +41,7 @@ def get_repsonse(input,text,jd):
     genai.configure(api_key=api_key)
     model=genai.GenerativeModel('models/gemini-pro')
     response=model.generate_content([input,text,jd])
-    time.sleep(8) 
+    time.sleep(2) 
     return response.text
 def input_pdf_text(uploaded_file):
     reader=pdf.PdfReader(uploaded_file)
