@@ -74,7 +74,7 @@ job description: {job_description}
 {"name":, "matching_score": "%", "mail_id":, contact_no:}"""
 
 document_info = {}
-st.title("Application Tracking System(ATS) Using LLM")
+st.title("Resume Parser Using LLM")
 job_description = st.text_area("Enter the job description", height=200)
 threshold = st.slider("Select the threshold for matching score", min_value=0.0, max_value=100.0, value=60.0, step=0.1)    
 if st.button("Submit"):
